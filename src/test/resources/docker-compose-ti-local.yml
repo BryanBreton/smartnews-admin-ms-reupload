@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:12.7-alpine
+    container_name: 'smartnews-admin-ms_postgresql-TI'
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=docker
